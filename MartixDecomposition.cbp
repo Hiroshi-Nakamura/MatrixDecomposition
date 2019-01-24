@@ -13,6 +13,9 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add option="-std=c++1z" />
+					<Add option="-DDEBUG" />
+					<Add directory="/usr/include/eigen3" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -23,6 +26,7 @@
 			<Add option="-Wall" />
 		</Compiler>
 		<Unit filename="AutomaticDifferentiation.hpp" />
+		<Unit filename="MatrixDecompositionMain.cpp" />
 		<Unit filename="Minimization.hpp" />
 		<Extensions>
 			<code_completion />
